@@ -14,3 +14,14 @@ function soma(){
     console.log(total)
 }
 soma(1, 2, 3, 4, 5, 5, 6, 6)
+
+const conta = function(operador, acumulador, ...numeros){
+    for(let numero of numeros){
+        if(operador === '+') acumulador += numero
+        if(operador === '-') acumulador -= numero
+        if(operador === '*') acumulador *= numero
+        if(operador === '/') acumulador /= numero
+    }
+    console.log(acumulador)
+}
+conta('*', 1, 2, 2, 2, 2, 2)
