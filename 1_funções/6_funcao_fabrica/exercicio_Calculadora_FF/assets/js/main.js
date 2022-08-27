@@ -9,12 +9,15 @@ function criaCalculadora(){
 
     pressionaEnter(){
       document.addEventListener('keyup', e => {
-        this.realizaConta()
+        if(e.keyCode === 13){
+          this.realizaConta()
+        }
       })
     },
 
     btnParaDisplay(valor){
       this.display.value += valor
+      this.display.focus()
     },
 
     limparDisplay(){

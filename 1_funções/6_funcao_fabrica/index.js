@@ -1,4 +1,4 @@
-// FACTORY FUNCTION (Função fábrica)
+// FACTORY FUNCTION (Função fábrica) -> Retorna um objeto
 
 function criaPessoa(nome, sobrenome, altura, peso) {
     return {
