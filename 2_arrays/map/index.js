@@ -6,7 +6,7 @@ console.log(numerosEmDobro)
 
 // 1 -> Retorne apenas uma string com o nome da pessoa
 // 2 -> Remova apenas a chave "nome" do objeto
-// 3 -> dicione a chave id em cada objeto
+// 3 -> Adicione a chave id em cada objeto
 const pessoas = [
     {nome: 'Matheus', idade: 25},
     {nome: 'Amanda', idade: 20},
