@@ -6,7 +6,10 @@ function tempoAleatorio(min, max) {
 
 function conectarDB(msg) {
     return new Promise((resolve, reject) => {
-        if(typeof msg !== 'string') reject('BAD VALUE')
+        if(typeof msg !== 'string'){
+            reject('BAD VALUE')
+            return
+        }
 
         setTimeout(() => {
             resolve(msg)
