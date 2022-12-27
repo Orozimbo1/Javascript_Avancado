@@ -64,8 +64,8 @@ function isCPF(CPF) {
 
         const cpfEncontrado = cpfArray.toString().replace(/\D+/g, '')
 
-        if (cpfEncontrado === cpfOriginal.replace(/\D+/g, '')) return console.log('CPF legítimo')
-        console.log('CPF inexistente')
+        if (cpfEncontrado === cpfOriginal.replace(/\D+/g, '')) return console.log('CPF válido')
+        console.log('CPF inválido')
         return
     }
 
